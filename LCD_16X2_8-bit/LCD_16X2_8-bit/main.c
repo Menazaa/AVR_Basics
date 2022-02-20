@@ -159,11 +159,11 @@ int main()
 
 
 
-	LCD_String("ElectronicWINGS");		/* write string on 1st line of LCD*/
+	LCD_String("Mohamed Ahmed");		/* write string on 1st line of LCD*/
 
 	LCD_Command(0xc0);					/* Go to 2nd line*/
 
-	LCD_String("Hello World");			/* Write string on 2nd line*/
+	LCD_String("Mahmoud Menazaa");			/* Write string on 2nd line*/
 
 
 

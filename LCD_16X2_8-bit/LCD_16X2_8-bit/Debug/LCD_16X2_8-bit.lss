@@ -1,13 +1,13 @@
 
-LCD_16X2_4-bit.elf:     file format elf32-avr
+LCD_16X2_8-bit.elf:     file format elf32-avr
 
 Sections:
 Idx Name          Size      VMA       LMA       File off  Algn
-  0 .data         0000001c  00800100  0000017e  000001f2  2**0
+  0 .data         0000001e  00800100  0000017e  000001f2  2**0
                   CONTENTS, ALLOC, LOAD, DATA
   1 .text         0000017e  00000000  00000000  00000074  2**1
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
-  2 .comment      00000030  00000000  00000000  0000020e  2**0
+  2 .comment      00000030  00000000  00000000  00000210  2**0
                   CONTENTS, READONLY
   3 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  00000240  2**2
                   CONTENTS, READONLY
@@ -75,7 +75,7 @@ Disassembly of section .text:
   7e:	02 c0       	rjmp	.+4      	; 0x84 <__do_copy_data+0x10>
   80:	05 90       	lpm	r0, Z+
   82:	0d 92       	st	X+, r0
-  84:	ac 31       	cpi	r26, 0x1C	; 28
+  84:	ae 31       	cpi	r26, 0x1E	; 30
   86:	b1 07       	cpc	r27, r17
   88:	d9 f7       	brne	.-10     	; 0x80 <__do_copy_data+0xc>
   8a:	0e 94 ad 00 	call	0x15a	; 0x15a <main>
@@ -201,7 +201,7 @@ Disassembly of section .text:
 
 
 
-	LCD_String("ElectronicWINGS");		/* write string on 1st line of LCD*/
+	LCD_String("Mohamed Ahmed");		/* write string on 1st line of LCD*/
  15e:	80 e0       	ldi	r24, 0x00	; 0
  160:	91 e0       	ldi	r25, 0x01	; 1
  162:	0e 94 97 00 	call	0x12e	; 0x12e <LCD_String>
@@ -210,8 +210,8 @@ Disassembly of section .text:
  166:	80 ec       	ldi	r24, 0xC0	; 192
  168:	0e 94 4b 00 	call	0x96	; 0x96 <LCD_Command>
 
-	LCD_String("Hello World");			/* Write string on 2nd line*/
- 16c:	80 e1       	ldi	r24, 0x10	; 16
+	LCD_String("Mahmoud Menazaa");			/* Write string on 2nd line*/
+ 16c:	8e e0       	ldi	r24, 0x0E	; 14
  16e:	91 e0       	ldi	r25, 0x01	; 1
  170:	0e 94 97 00 	call	0x12e	; 0x12e <LCD_String>
 

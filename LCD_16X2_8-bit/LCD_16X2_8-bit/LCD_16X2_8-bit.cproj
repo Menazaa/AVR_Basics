@@ -12,9 +12,9 @@
     <OutputFileName>$(MSBuildProjectName)</OutputFileName>
     <OutputFileExtension>.elf</OutputFileExtension>
     <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
-    <AssemblyName>LCD_16X2_4-bit</AssemblyName>
-    <Name>LCD_16X2_4-bit</Name>
-    <RootNamespace>LCD_16X2_4-bit</RootNamespace>
+    <AssemblyName>LCD_16X2_8-bit</AssemblyName>
+    <Name>LCD_16X2_8-bit</Name>
+    <RootNamespace>LCD_16X2_8-bit</RootNamespace>
     <ToolchainFlavour>Native</ToolchainFlavour>
     <KeepTimersRunning>true</KeepTimersRunning>
     <OverrideVtor>false</OverrideVtor>
