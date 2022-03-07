@@ -12,14 +12,15 @@
 
 int main(void)
 {
-    DDRD = 0xff;
-	DDRB = 0x03;
-	PORTD = 0x00;
-	PORTB = 0x03;
+	DDRB = 0x20;
+	PORTB = 0x00;
 	
     while (1) 
     {
-		PORTD = ~(PINB & 0x03)&0b00000011;
+		PORTB |= (1<<5);
+		_delay_us(3000000);
+		PORTB &= 0b11011111;
+		_delay_us(3000000);
 		
     }
 }
